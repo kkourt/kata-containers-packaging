@@ -508,6 +508,10 @@ main() {
 	info "Kernel version: ${kernel_version}"
 
 	case "${subcmd}" in
+		getpath)
+			echo "${kernel_path}"
+			;;
+
 		build)
 			build_kernel "${kernel_path}"
 			;;
