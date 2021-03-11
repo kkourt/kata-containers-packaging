@@ -365,7 +365,7 @@ setup_kernel() {
 
 	info "Copying config file from: ${kernel_config_path}"
 	cp "${kernel_config_path}" ./.config
-	make oldconfig
+	make olddefconfig
 	)
 }
 
